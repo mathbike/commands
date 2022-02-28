@@ -24,4 +24,6 @@ git branch -M main
 git remote add origin https://github.com/mathbike/commands.git
 git push -u origin main
 
-
+config add .
+config commit -m "d"
+config push
