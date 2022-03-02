@@ -33,4 +33,20 @@ git remote set-url origin new.git.url/here
 # change upstream of config origin
 config push --set-upstream "origin"
 
+# setting up new machine
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/mathbike/dotfiles.git ~
+# or create temp dir
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/mathbike/dotfiles.git tmpdotfiles
+rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
+rm -r tmpdotfiles
+
+
+
+
+
+
+
+
+
+
 
