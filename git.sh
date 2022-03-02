@@ -24,6 +24,13 @@ git branch -M main
 git remote add origin https://github.com/mathbike/commands.git
 git push -u origin main
 
-config add .
+config add .xinitrc
 config commit -m "d"
 config push
+
+# change url of origin
+git remote set-url origin new.git.url/here
+# change upstream of config origin
+config push --set-upstream "origin"
+
+
