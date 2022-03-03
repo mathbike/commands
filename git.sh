@@ -38,6 +38,15 @@ git clone --separate-git-dir=$HOME/.dotfiles https://github.com/mathbike/dotfile
 rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
 
+# git remove
+git rm <fileName>
+# automatically stage tracked files, including deleting the previously tracked files
+git add -u
+# stage your whole working tree
+git add -u :/
+# stage just the current path
+git add -u .
+
 
 
 
