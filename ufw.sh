@@ -8,8 +8,8 @@ sudo ufw disable
 # reset to default configuration
 sudo ufw reset
 # change default settings
-sudo ufw default allow outgoing
 sudo ufw default deny incoming
+sudo ufw default allow outgoing
 # status
 sudo ufw status
 sudo ufw status verbose
