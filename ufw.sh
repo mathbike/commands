@@ -1,13 +1,15 @@
 # ufw commands
 
+# enable ufw on startup
+sudo systemctl enable ufw.service
 # enable / disable
 sudo ufw enable
 sudo ufw disable
 # reset to default configuration
 sudo ufw reset
 # change default settings
-sudo ufw default deny incoming
 sudo ufw default allow outgoing
+sudo ufw default deny incoming
 # status
 sudo ufw status
 sudo ufw status verbose
@@ -21,4 +23,8 @@ sudo ufw allow 80
 # allow https
 sudo ufw allow https
 sudo ufw allow 443
+# list installed apps
+sudo ufw app list
+# turn off logging
+sudo ufw logging off
 
