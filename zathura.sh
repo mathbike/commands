@@ -10,4 +10,12 @@ s
 a
 # side by side
 d
+# zoom
+- or + #fn on asus
+
+
+# vimtex
+
+# compile
+\ll
 
