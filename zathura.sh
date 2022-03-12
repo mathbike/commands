@@ -6,7 +6,7 @@
 ctrl-r
 # fit width
 s
-# back
+# fit page
 a
 # side by side
 d
