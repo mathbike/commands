@@ -17,3 +17,9 @@ v # visual mode
 yy # copy entire line
 p # paste
 dd # delete entire line
+
+# copy to system clipboard
+"+y    " # don't include last " 
+# paste from system clipboard
+"+p    " # don't include last "
+
